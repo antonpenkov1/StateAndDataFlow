@@ -5,9 +5,9 @@
 //  Created by Alexey Efimov on 06.03.2024.
 //
 
-import Foundation
+import SwiftUI
 
-final class LoginViewViewModel: ObservableObject {
-    @Published var name = ""
-    @Published var isLoggedIn = false
+final class LoginViewViewModel: ObservableObject {    
+    @AppStorage("name") var name = ""
+    @AppStorage("isLoggedIn") var isLoggedIn = false
 }

@@ -27,6 +27,7 @@ struct LoginView: View {
             Button(action: login) {
                 Label("OK", systemImage: "checkmark.circle")
             }
+            .disabled(loginViewVM.name.count < 3)
         }
         .padding()
     }
